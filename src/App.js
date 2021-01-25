@@ -1,5 +1,13 @@
+import { useState } from "react";
+
+const initialQuote = {
+  text: 'Quote',
+  author: 'Author'
+}
 
 function App() {
+  const [quote, setQuote] = useState(initialQuote)
+
   return (
     <div className="app">
       <img
@@ -7,7 +15,7 @@ function App() {
         alt="logo"
       />
       <button>Get another</button>
-      <p>This is a quote<br /><span>- Author</span></p>
+      <p>{quote.text}<br /><span>- {quote.author}</span></p>
     </div>
   );
 }
