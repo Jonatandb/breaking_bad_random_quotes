@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Quote from "./components/Quote";
 
 const initialQuote = {
   text: 'Quote',
@@ -15,7 +16,7 @@ function App() {
         alt="logo"
       />
       <button>Get another</button>
-      <p>{quote.text}<br /><span>- {quote.author}</span></p>
+      <Quote quote={quote} />
     </div>
   );
 }
