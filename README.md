@@ -6,6 +6,14 @@
 
 - https://www.breakingbadapi.com/documentation
 
+## Roboto font by Google
+
+- https://fonts.google.com/specimen/Roboto
+
+## CSS Styles used
+
+- https://gist.github.com/luismcabrera/fff6924dfb7386b384f7240d6260e51a
+
 ---
 
 ---
