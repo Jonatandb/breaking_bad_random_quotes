@@ -1,3 +1,15 @@
+# React App ✅ Breaking Bad API - Para principiantes con Hooks
+
+- https://www.youtube.com/watch?v=lIbJEwbfxr0&ab_channel=LuisCabrera
+
+## The Breaking bad API
+
+- https://www.breakingbadapi.com/documentation
+
+---
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
