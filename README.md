@@ -15,6 +15,10 @@
 
 - https://gist.github.com/luismcabrera/fff6924dfb7386b384f7240d6260e51a
 
+## Pure CSS Loaders
+
+- https://loading.io/css
+
 ---
 
 ---

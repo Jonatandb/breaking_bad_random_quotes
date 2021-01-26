@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Quote from "./components/Quote";
+import Spinner from "./components/Spinner";
 
 const initialQuote = {
   text: 'Quote',
@@ -8,6 +9,7 @@ const initialQuote = {
 
 function App() {
   const [quote, setQuote] = useState(initialQuote)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     updateQuote()
@@ -15,12 +17,15 @@ function App() {
 
   const updateQuote = async () => {
     try {
+      setLoading(true)
       const url = "https://www.breakingbadapi.com/api/quote/random"
       const response = await fetch(url)
       const [newQuote] = await response.json()
       const { quote: text, author } = newQuote
       setQuote({ text, author })
+      setLoading(false)
     } catch (error) {
+      setLoading(false)
       console.error('Error getting data:', error)
     }
   }
@@ -32,7 +37,10 @@ function App() {
         alt="logo"
       />
       <button onClick={updateQuote}>Get another</button>
-      <Quote quote={quote} />
+      {loading
+        ? <Spinner />
+        : <Quote quote={quote} />
+      }
     </div>
   );
 }
