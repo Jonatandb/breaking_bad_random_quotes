@@ -19,6 +19,10 @@
 
 - https://loading.io/css
 
+## Favicon
+
+- https://www.favicon.cc/?action=icon&file_id=629132
+
 ---
 
 ---
