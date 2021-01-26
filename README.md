@@ -5,6 +5,7 @@
 ## The Breaking bad API
 
 - https://www.breakingbadapi.com/documentation
+- [Random quote endpoint](https://www.breakingbadapi.com/api/quote/random)
 
 ## Roboto font by Google
 
