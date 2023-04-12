@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import Quote from "./components/Quote";
-import Spinner from "./components/Spinner";
+import { useEffect, useState } from 'react'
+import Quote from './components/Quote'
+import Spinner from './components/Spinner'
 
 const initialQuote = {
   text: 'Quote',
-  author: 'Author'
+  author: 'Author',
 }
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
   const updateQuote = async () => {
     try {
       setLoading(true)
-      const url = "https://www.breakingbadapi.com/api/quote/random"
+      const url = 'https://api.breakingbadquotes.xyz/v1/quotes'
       const response = await fetch(url)
       const [newQuote] = await response.json()
       const { quote: text, author } = newQuote
@@ -31,18 +31,16 @@ function App() {
   }
 
   return (
-    <div className="app">
+    <div className='app'>
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/7/77/Breaking_Bad_logo.svg"
-        alt="logo"
+        src='https://upload.wikimedia.org/wikipedia/commons/7/77/Breaking_Bad_logo.svg'
+        alt='logo'
       />
       <button onClick={updateQuote}>Get another</button>
-      {loading
-        ? <Spinner />
-        : <Quote quote={quote} />
-      }
+      {loading ? <Spinner /> : <Quote quote={quote} />}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
