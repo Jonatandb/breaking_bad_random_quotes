@@ -36,7 +36,7 @@ function App() {
         src='https://upload.wikimedia.org/wikipedia/commons/7/77/Breaking_Bad_logo.svg'
         alt='logo'
       />
-      <button onClick={updateQuote}>Get another</button>
+      <button onClick={updateQuote}>Traer otra</button>
       {loading ? <Spinner /> : <Quote quote={quote} />}
     </div>
   )
